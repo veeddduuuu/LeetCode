@@ -2,6 +2,7 @@ class Solution {
 public:
     int findNumberOfLIS(vector<int> arr) {
         int n = arr.size();
+        if (n==1) return 1;
         vector<int> dp(n, 1);
         int lis = 0;
         vector<int> cnt(n, 1);
